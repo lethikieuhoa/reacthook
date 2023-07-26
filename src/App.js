@@ -14,6 +14,7 @@ import {
   Route,
 } from "react-router-dom";
 import DetailBlog from './views/DetailBlog';
+import YoutubeSearch from './views/YoutubeSearch';
 
 
 function App() {
@@ -70,9 +71,10 @@ function App() {
                 </div>
               } />
               <Route path='/blog' element={<Blog />} />
-              <Route path="/secret" element={<Todo todos={todos} title="All todo" handleOnleDeleteApp={handleOnleDeleteApp} />} />
+
               <Route path="/blog/:id" element={<DetailBlog />} />
               <Route path="/add-new-blog" element={<AddNewBlog />} />
+              <Route path="/secret" element={<YoutubeSearch />} />
               <Route path="*" element={<PageNotFound />} />
             </Routes>
           </div>

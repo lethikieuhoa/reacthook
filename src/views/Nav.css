@@ -1,6 +1,9 @@
 .topnav {
     overflow: hidden;
     background-color: #7e7979;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center
 }
 
 .topnav a {
